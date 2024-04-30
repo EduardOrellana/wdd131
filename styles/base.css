@@ -161,7 +161,7 @@ header h1 {
     overflow: auto;
 }
 
-.card h1 {
+.card h2 {
     background-color: var(--primaryColor);
     color: var(--thirdColor);
     padding: 10px;
@@ -170,7 +170,16 @@ header h1 {
     font-size: 140%;
 }
 
-.card h2 {
+/* .card h2 {
+    color: var(--secondaryColor);
+    text-align: center;
+    border-bottom: 2px solid blue;
+    margin-left: 105px;
+    margin-right: 105px;
+
+} */
+
+.card h3 {
     color: var(--secondaryColor);
     text-align: center;
     border-bottom: 2px solid blue;
