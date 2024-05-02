@@ -4,7 +4,7 @@
 const button = document.querySelector('button');
 
 
-button.addEventListener('click', function() {
+button.addEventListener('click', () => {
 
     const input = document.querySelector("#favchap");
     const list = document.querySelector("#list");
@@ -28,6 +28,7 @@ button.addEventListener('click', function() {
         input.value = '';
 
     }
+    
     else {
         input.focus();
         console.log("the input is empty");
