@@ -1,0 +1,164 @@
+/* Mobile views */
+
+:root {
+
+    /* colors */
+    --firstColor: #97DFFC;
+    --secondColor: #858AE3;
+    --thridColor: #613DC1;
+    --forthColor: #4E148C;
+    --fithColor: #2C0735;
+
+    /* fonts */
+    --primaryFont: "Montserrat", sans-serif;
+    --weightFont: <weight>;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--primaryFont);
+}
+
+header, main, footer {
+    max-width: 640px;
+    margin: 1rem auto;
+    border: 1px solid #bbb;
+    padding: 1rem;
+    background-color: var(--firstColor);
+}
+
+
+/* header  */
+
+header {
+    background-color: var(--thridColor);
+}
+
+header h1 {
+    padding-left: 10px;
+    padding-top: 10px;
+    color: var(--firstColor);
+    font-weight: 500;
+    font-size: 20px;
+    font-style: oblique;
+}
+
+img {
+    width: 85%;
+}
+
+nav {
+    max-width: 640px;
+    background-color: var(--secondColor);
+    display: flex;
+    flex-direction: column;
+    border-radius: 0 0 10px 10px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav a {
+    display: none;
+    text-align: center;
+    padding: 5px;
+    text-decoration: none;
+    font-weight: 200;
+    color: white;
+    font-style: normal;
+}
+
+nav a:hover{
+    background-color: transparent;
+    color: red;
+}
+
+
+/*HamButton*/
+#menu {
+	font-size: 1.5rem;
+	border: 0;
+	background: none;
+	color: var(--firstColor);
+ 	position: absolute;
+	top: 2rem;
+	right: 2rem;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "X";
+}
+
+/* #navMenu {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--secondColor);
+    color: var(--fithColor);
+}
+
+/* #navMenu a {
+    display: none;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+} I deleted the Id navMenu*/ 
+
+
+/* #navMenu li:hover {
+    background-color: var(--firstColor);
+    color: yellow;
+    font-weight: 700;
+} */
+
+.active {
+    color: yellow;
+}
+
+/* on click at the button */
+.open a {
+    display: block;
+}
+
+.open li {
+    padding: 10px;
+}
+
+
+/*Main Design*/
+#titlePage {
+    color: black;
+    text-align: center;
+}
+
+.album {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+figure {
+    text-align: center;
+}
+
+
+footer {
+    max-width: 640px;
+    background-color: var(--thridColor);
+    padding: 20px;
+    margin-top: 10px;
+    text-align: center;
+    color: white;
+    font-size: 100%;
+    font-family: var(--primaryFont);
+}
