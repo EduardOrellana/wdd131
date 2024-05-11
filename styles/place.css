@@ -98,7 +98,7 @@ footer {
     padding: var(--normalPadding);
     margin-top: 10px;
     text-align: center;
-    color: var(--secondaryColor);
+    color: black;
     font-weight: 400;
     font-family: var(--primaryFont);
 }
