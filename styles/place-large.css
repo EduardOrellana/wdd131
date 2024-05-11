@@ -19,7 +19,7 @@
 
     main {
         display: grid;
-        grid-template-columns: auto, auto, 300px;
+        grid-template-columns: auto auto 300px;
         grid-template-rows: auto auto;
     }
 
