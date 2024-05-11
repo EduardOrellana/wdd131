@@ -93,7 +93,7 @@ main table {
 /*Footer Style*/
 
 footer {
-    max-width: auto;
+    max-width: 100%;
     background-color: var(--primaryColor);
     padding: var(--normalPadding);
     margin-top: 10px;
