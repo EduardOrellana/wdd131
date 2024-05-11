@@ -79,24 +79,26 @@ main table {
 
 
 
-svg {
+#svgimage {
     width: 40%;
 }
 
-#svgimage{
+.weather {
     text-align: center;
 }
 
+.data {
+    text-align: center;
+}
 /*Footer Style*/
 
 footer {
-    max-width: 640px;
+    max-width: auto;
     background-color: var(--primaryColor);
     padding: var(--normalPadding);
     margin-top: 10px;
     text-align: center;
     color: var(--secondaryColor);
-    font-size: 20px;
     font-weight: 400;
     font-family: var(--primaryFont);
 }
