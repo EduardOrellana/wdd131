@@ -86,7 +86,7 @@ nav a:hover{
 	border: 0;
 	background: none;
 	color: var(--firstColor);
- 	position: absolute;
+    position: absolute;
 	top: 2rem;
 	right: 2rem;
 }
