@@ -6,14 +6,20 @@ const currentYear = document.getElementById('currentyear'); //Footer
 const lastModified = document.getElementById('modified'); //Footer
 
 const albumContainer = document.querySelector(".album");
+const oldMenu = document.getElementById("old")
+const home_ = document.getElementById("home");
+const newt = document.getElementById("new");
+const large = document.getElementById("large");
+const small = document.getElementById("small");
+const titlePage = document.getElementById("titlePage");
 
-
-
+//Hambutton
 hamButton.addEventListener('click', () => {
-navigation.classList.toggle('open');
-hamButton.classList.toggle('open');
+	navigation.classList.toggle('open');
+	hamButton.classList.toggle('open');
 });
 
+//Footer
 currentYear.textContent = new Date().getFullYear();
 lastModified.textContent = `Last modification: ${document.lastModified}`;
 
@@ -34,7 +40,7 @@ const temples = [
 	dedicated: "1888, May, 21",
 	area: 74792,
 	imageUrl:
-	"https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/manti-utah/400x250/manti-temple-768192-wallpaper.jpg"
+	"https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/manti-utah/800x500/manti-temple-768192-wallpaper.jpg"
 },
 {
 	templeName: "Payson Utah",
@@ -91,33 +97,26 @@ const temples = [
 	area: 995,
 	imageUrl:
 	"https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/san-jose-costa-rica/800x500/san-jose-costa-rica-temple-1162688-wallpaper.jpg"
+},
+{
+	templeName: "Salt Lake",
+	location: "Salt Lake City, Utah, USA",
+	dedicated: "1853, April, 6",
+	area: 23505,
+	imageUrl:
+	"https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/salt-lake-city-utah/2018/800x500/slctemple7.jpg"
 }
 ];
 
-
-// function displayTemplesAlbum(objectTemples){
-// 	//Create each section with the images.
-
-// 	albumContainer.innerHTML+= `<h2>${objectTemples.templeName}</h2>`;
-// 	albumContainer.innerHTML+= `<p>Location: ${objectTemples.location}</p>`;
-// 	albumContainer.innerHTML+= `<p>Dedicated: ${objectTemples.dedicated}</p>`;
-// 	albumContainer.innerHTML+= `<p>Size ${objectTemples.area}</p>`;
-
-
-
-// }
-
-
-
 function displayTemplesAlbum(templeObject) {
-
+	// albumContainer.innerHTML = "";
 	templeObject.forEach(index => {
 
 		//Here we are creating the all parts per image.
 		const slot = document.createElement("section");
 		slot.setAttribute("class", "slots");
 
-		const nameTemple = document.createElement("h2");
+		const nameTemple = document.createElement("h3");
 		nameTemple.setAttribute("class", "titleTemple");
 		nameTemple.textContent = `${index.templeName}`;
 
@@ -134,8 +133,8 @@ function displayTemplesAlbum(templeObject) {
 		imgTemple.setAttribute("src", index.imageUrl);
 		imgTemple.setAttribute("alt", `temple ${index.nameTemple}`);
 		imgTemple.setAttribute("loading", "lazy");
-		imgTemple.setAttribute("width", 1000);
-		imgTemple.setAttribute("height", 350);
+		// imgTemple.setAttribute("width", 1000);
+		// imgTemple.setAttribute("height", 350);
 
 		slot.appendChild(nameTemple);
 		slot.appendChild(locationTemple);
@@ -149,5 +148,52 @@ function displayTemplesAlbum(templeObject) {
 
 }
 
-displayTemplesAlbum(temples); //Displaying the temples.
 
+
+displayTemplesAlbum(temples); //Displaying the temples.;
+
+//Home Button
+function hom(){
+	albumContainer.innerHTML = "";
+	displayTemplesAlbum(temples);
+	titlePage.textContent = "Home";
+}
+
+//New Button
+function newf(){
+	albumContainer.innerHTML = "";
+	const newTEmples = temples.filter(temple => Number(temple.dedicated.substring(0,4)) > 2000);
+	displayTemplesAlbum(newTEmples);
+	titlePage.textContent = "New";
+}
+
+//Oldest Temples.
+function oldest(){
+	const oldTEmples = temples.filter(temple => Number(temple.dedicated.substring(0,4)) < 1900);
+	albumContainer.innerHTML = "";
+	displayTemplesAlbum(oldTEmples);
+	titlePage.textContent = "Old";
+}
+
+//Large Temples.
+function largert(){
+	const largTEmples = temples.filter(temple => temple.area > 90000);
+	albumContainer.innerHTML = "";
+	displayTemplesAlbum(largTEmples);
+	titlePage.textContent = "Large";
+}
+
+//Small Temples.
+function smallt(){
+	const smallTEmples = temples.filter(temples => temples.area < 10000);
+	albumContainer.innerHTML = "";
+	displayTemplesAlbum(smallTEmples);
+	titlePage.textContent = "Small";
+}
+
+
+oldMenu.addEventListener("click", oldest);
+home_.addEventListener("click", hom);
+newt.addEventListener("click", newf);
+large.addEventListener("click", largert);
+small.addEventListener("click", smallt);
