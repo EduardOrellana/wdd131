@@ -63,6 +63,8 @@ larges views */
     nav a {
         display: block;
         flex: 1 1 100%;
+        color: white;
+        font-weight: 500;
     }
     
     nav a:hover{
