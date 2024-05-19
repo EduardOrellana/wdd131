@@ -157,6 +157,8 @@ function hom(){
 	albumContainer.innerHTML = "";
 	displayTemplesAlbum(temples);
 	titlePage.textContent = "Home";
+	navigation.classList.toggle('open');
+	hamButton.classList.toggle('open');
 }
 
 //New Button
@@ -165,6 +167,8 @@ function newf(){
 	const newTEmples = temples.filter(temple => Number(temple.dedicated.substring(0,4)) > 2000);
 	displayTemplesAlbum(newTEmples);
 	titlePage.textContent = "New";
+	navigation.classList.toggle('open');
+	hamButton.classList.toggle('open');
 }
 
 //Oldest Temples.
@@ -173,6 +177,8 @@ function oldest(){
 	albumContainer.innerHTML = "";
 	displayTemplesAlbum(oldTEmples);
 	titlePage.textContent = "Old";
+	navigation.classList.toggle('open');
+	hamButton.classList.toggle('open');
 }
 
 //Large Temples.
@@ -181,6 +187,8 @@ function largert(){
 	albumContainer.innerHTML = "";
 	displayTemplesAlbum(largTEmples);
 	titlePage.textContent = "Large";
+	navigation.classList.toggle('open');
+	hamButton.classList.toggle('open');
 }
 
 //Small Temples.
@@ -189,6 +197,8 @@ function smallt(){
 	albumContainer.innerHTML = "";
 	displayTemplesAlbum(smallTEmples);
 	titlePage.textContent = "Small";
+	navigation.classList.toggle('open');
+	hamButton.classList.toggle('open');
 }
 
 
