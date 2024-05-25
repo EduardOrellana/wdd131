@@ -1,7 +1,7 @@
 //Counting and localStorage
 const textCount = document.getElementById("count");
 
-let countLocalStorage = Number(window.localStorage.getItem("countingForm")) || 1;
+let countLocalStorage = Number(window.localStorage.getItem("countingForm")) || 0;
 
 
 
