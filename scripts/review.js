@@ -12,19 +12,7 @@ function sumLocalStorage(){
     textCount.textContent = `Thanks! this was your ${countLocalStorage} time`;
 }
 
-buttonForm.addEventListener("click", sumLocalStorage)
-
-
-
-//Return to the Form
-
-const retunButton = document.querySelector("button");
-
-retunButton.addEventListener("click", function(){
-    window.location.href = "https://eduardorellana.github.io/wdd131/form.html";
-})
-
-
+sumLocalStorage();
 
 //Footer
 const currentYear = document.getElementById('currentyear');
