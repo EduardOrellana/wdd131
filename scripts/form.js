@@ -10,7 +10,7 @@ lastModified.textContent = `Last modification: ${document.lastModified}`;
 
 //Addint more options into the Select
 
-let currentSelect = document.getElementById('product-name');
+let productsBox = document.getElementById('product-name');
 
 //Array of more options
 const products = [
@@ -40,4 +40,51 @@ const products = [
         averagerating: 5.0
     }
 ];
+
+function displayProducts(product){
+
+    products.forEach(index => {
+
+        const box = document.createElement("option");
+        
+        box.value = index.id;
+        box.textContent = index.name;
+
+        //Append the new objects
+
+        productsBox.appendChild(box);
+
+    });
+
+}
+
+//calling the function
+displayProducts(productsBox);
+
+
+//Counting and localStorage
+const textCount = document.getElementById("count");
+const buttonForm = document.querySelector('input[type="submit"');
+let countLocalStorage = Number(window.localStorage.getItem("countingForm")) || 1;
+
+
+
+function sumLocalStorage(){
+    //This function will exucate each time the form was sent.
+    countLocalStorage ++;
+    window.localStorage.setItem("countingForm");
+    textCount.textContent = `Thanks! this was your ${countLocalStorage} time`;
+}
+
+buttonForm.addEventListener("click", sumLocalStorage)
+
+
+
+//Return to the Form
+
+const retunButton = document.querySelector("button");
+
+retunButton.addEventListener("click", function(){
+    window.history.back;
+})
 

@@ -53,8 +53,6 @@ function deleteChapter(chapter) {
     setChapterList();
 
 }
-alert('Hola');
-
 
 
 
