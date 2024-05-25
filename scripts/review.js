@@ -23,3 +23,12 @@ const retunButton = document.querySelector("button");
 retunButton.addEventListener("click", function(){
     window.location.href = "https://eduardorellana.github.io/wdd131/form.html";
 })
+
+
+
+//Footer
+const currentYear = document.getElementById('currentyear');
+const lastModified = document.getElementById('modified');
+
+currentYear.textContent = new Date().getFullYear();
+lastModified.textContent = `Last modification: ${document.lastModified}`;
