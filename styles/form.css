@@ -1,0 +1,119 @@
+/*This view will be only for smart devices*/
+
+/*Variables*/
+
+:root{
+
+	--principal-font: "Oswald", sans-serif;
+	--background: #d5cdd5;
+	--header-footer-color: #2d032b;
+	--button-color: #efefef;
+	--optionalcolor: #5e347c;
+
+}
+
+* {
+	margin: 0;
+    padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: var(--background);
+}
+
+main {
+	text-align: justify;
+    max-width: 100%;
+    margin-top: 0;
+    border: 1px solid #bbb;
+    padding: 1rem;
+}
+
+/*General Format*/
+
+header {
+    max-width: 100%;
+    background-color: var(--header-footer-color);
+    color: white;
+    text-align: center;
+    top: 0;
+    width: 100%;
+	margin-top: 0;
+	padding: 1rem;
+}
+
+footer{
+    max-width: 100%;
+    background-color: var(--header-footer-color);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.form1 fieldset{
+	margin-top: 0;
+	padding: 10px;
+	font-family: var(--principal-font);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+/*Stars Overall*/
+input[type="radio"] {
+	display: none;
+	position: relative;
+	caret-color: rgba(0, 0, 0, 0);
+}
+
+.stars {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: left;
+}
+
+.stars > label {
+	color: gold;
+	width: 30px;
+	height: 30px;
+	font-size: 2rem;
+	margin-left: 5px;
+	display: flex;
+	align-items: center;
+	caret-color: rgba(0, 0, 0, 0); /* remove blinking cursor*/
+}
+
+.stars > label:hover {
+	color: #000;
+}
+
+.stars > label::before {
+	content: "\2606";
+}
+
+.stars input:checked ~ label::before {
+	content: "\2605";
+}
+
+/*Other templates of the form*/
+select,
+input[type="date"],
+input[type="text"]{
+	height: 35px;
+}
+
+input[type="checkbox"] {
+    width: 20px; /* Ancho deseado */
+    height: 20px; /* Altura deseada */
+    font-size: 16px; /* Tamaño del contenido */
+}
+
+textarea {
+	width: 100%;
+	height: 50px;
+}
