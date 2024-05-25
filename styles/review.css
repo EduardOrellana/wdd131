@@ -54,7 +54,9 @@ footer{
     width: 100%;
 }
 
-#count {
+#count,
+h2
+{
 	font-size: 50px;
 	text-align: center;
 }
