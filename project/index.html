@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Erick Orellana">
     <meta name="description" content="Web site of the business called Functional Marriages & Happy Familiest">
-    <link rel="icon" href="" type="image/x-icon">
+    <link rel="icon" href="images/logo.webp" type="image/x-icon">
     <title>Home - Functional Marriages & Happy Families</title>
     <link href="styles/base.css" type="text/css" rel="stylesheet">
     <link href="styles/base-large.css" type="text/css" rel="stylesheet">
@@ -35,16 +35,58 @@
     <header>
         <img class="logo" src="images/logo.webp" alt="logo" class="image-item" width="10%" loading="lazy">
         <h1>Home</h1>
+        <button id="menu"></button>
         <nav id="navMenu">
             <ul>
-                <a href="#"> <li> Home</li></a>
-                <a href="#"> <li> About Us</li></a>
-                <a href="#"> <li> FAQ & Histories</li></a>
+                <li><a class="active" href="#">Home</a></li>
+                <li><a class="active" href="#">About Us</a></li>
+                <li><a class="active" href="#">FAQ & Histories</a></li>
             </ul>
         </nav>
     </header>
     <main>
+        <div class="portal">
+            <figure>
+                <img src="images/fam3.webp" alt="family" loading="lazy" width="1150">
+                <figcaption></figcaption>
+            </figure>
+        </div>
+        <section id="post_section">
+            <h2>Myths and realities</h2>
+            <hr>
+            <div id="post">
+                
+            </div>
+            </section>
+        <article id="info">
+            <h2>
+                Jeimy Alvarado
+            </h2>
+            <img id="jeimy" src="images/principal.webp" alt="Jeimy Alvarado" width="200" loading="lazy">
+            <hr>
+            <h3>My History</h3>
+            <p>
+                Psych. Jeimy Alvarado
 
+                Hello! My name is Jeimy Alvarado, psychologist of Functional Marriages & Happy Families.
+
+                I graduated from Clinical Psychology at the Mariano Galvez University of Guatemala.
+
+                I am currently beginning my studies in Family and Marriage at BYU-Idaho University.
+
+                I firmly believe that to strengthen our society we must start by strengthening families, and this is
+                what I
+                dedicate myself to.
+            </p>
+            <hr>
+            <h3>Location</h3>
+            <div id="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1930.6324737519228!2d-90.48591!3d14.583973!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8589a375ccdf4ad5%3A0xea001967ad218911!2sTemplo%20de%20la%20Ciudad%20de%20Guatemala!5e0!3m2!1ses!2sgt!4v1717046248965!5m2!1ses!2sgt"
+                    width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </article>
     </main>
     <footer>
         <div>
@@ -60,13 +102,18 @@
             <p id="modified"></p>
         </div>
         <div class="logo-footer">
-            <img src="images/logo.webp" alt="logo" class="image-item" loading="lazy" width="50">
+            <button ><img src="images/logo.webp" alt="logo" class="image-item" loading="lazy" width="50"></button>
         </div>
         <div id="social-media">
-            <a href="#"><img src="images/youtube-logo.webp" alt="youtube-logo" class="social-logos" loading="lazy" width="50"></a>
-            <a href="#"><img src="images/twitter-logo.webp" alt="twitter-logo" class="social-logos" loading="lazy" width="50"></a>
-            <a href="#"><img src="images/instagram-logo.webp" alt="instagram-logo" class="social-logos" loading="lazy" width="50"></a>
-            <a href="#"><img src="images/facebook-logo.webp" alt="facebook-logo" class="social-logos" loading="lazy" width="50"></a>
+            <a href="#"><img src="images/youtube-logo.webp" alt="youtube-logo" class="social-logos" loading="lazy"
+                    width="50"></a>
+            <a href="#"><img src="images/twitter-logo.webp" alt="twitter-logo" class="social-logos" loading="lazy"
+                    width="50"></a>
+            <a href="https://www.instagram.com/_matrimoniosyfamiliasfelices/" target="_blank"><img
+                    src="images/instagram-logo.webp" alt="instagram-logo" class="social-logos" loading="lazy"
+                    width="50"></a>
+            <a href="#"><img src="images/facebook-logo.webp" alt="facebook-logo" class="social-logos" loading="lazy"
+                    width="50"></a>
         </div>
     </footer>
 </body>

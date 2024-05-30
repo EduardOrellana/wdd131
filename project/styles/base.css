@@ -1,0 +1,149 @@
+/* 
+//Mobile ::view-transition
+
+ */
+
+
+@media screen and (max-width: 640px){
+    
+    :root {
+        /*Global Variables*/
+    
+        /*Color Palette*/
+        --primaryColor: #c6ebbe;
+        --secondColor: #A9DBB8;
+        --thirdColor: #7CA5B8;
+        --forthColor: #38369A;
+    
+    
+        /*Typography*/
+        --heading-font: "Source Sons 3", sans-serif;
+        --paragraph-font: "Montserrat", sans-serif;
+    
+    }
+
+    /*Header*/
+    header {
+        background-color: var(--secondColor);
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        
+    }
+
+    header > img {
+        border-radius: 50%;
+        width: 20%;
+        margin-right: 50px;
+    }
+
+    header h1 {
+        text-align: center;
+        padding-top: 10px;
+        color: var(--firstColor);
+        font-weight: 500;
+        font-size: 30px;
+    }
+
+    img {
+        width: 85%;
+    }
+
+    #navMenu {
+        max-width: 640px;
+        background-color: var(--secondColor);
+        display: flex;
+        flex-direction: column;
+        border-radius: 0 0 10px 10px;
+    }
+
+    #navMenu ul {
+        list-style: none;
+        margin-top: 5rem;
+    }
+
+    #navMenu a {
+        display: none;
+        text-align: right;
+        padding: 5px;
+        text-decoration: none;
+        font-weight: 200;
+        color: var(--forthColor);
+        font-style: normal;
+    }
+
+    #navMenu a:hover{
+        background-color: transparent;
+        color: red;
+    }
+
+    /*HamButton*/
+    #menu {
+        font-size: 2rem;
+        border: 0;
+        background: none;
+        color: var(--forthColor);
+        position: absolute;
+        top: 1rem;
+        right: 2rem;
+    }
+    
+    #menu::before {
+        content: "☰";
+    }
+
+    #menu.open::before {
+        content: "X";
+    }
+
+    #navMenu.open a{
+        display: block;
+        font-weight: 400;
+    }
+    
+    .open li {
+        padding: 10px;
+    }
+
+    /*Main*/
+    main {
+        display: block;
+        text-align: center;
+    }
+
+
+
+
+    /*Footer*/
+
+    footer img {
+        width: 25%;
+
+    }
+
+    footer {
+        background-color: var(--thirdColor);
+        margin-top: 10px;
+        padding-top: 2rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        color: black;
+        font-size: 90%;
+        font-family: var(--paragraph-font);
+        display: grid;
+        grid-template-columns: 50% 50%;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .logo-footer {
+        display: none;
+    }
+
+    #social-media {
+        grid-column: 2/3;
+        padding-left: 50%;
+    }
+
+    }
+    
