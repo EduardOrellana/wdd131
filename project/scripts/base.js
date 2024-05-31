@@ -35,6 +35,22 @@ const tips = [
 {
     tipName: "realidad3",
     source: "images/post/realidad3.webp"
+},
+{
+    tipName: "mito4",
+    source: "images/post/mito4.webp"
+},
+{
+    tipName: "realidad4",
+    source: "images/post/realidad4.webp"
+},
+{
+    tipName: "mito5",
+    source: "images/post/mito5.webp"
+},
+{
+    tipName: "realidad5",
+    source: "images/post/realidad5.webp"
 }
 ]
 
