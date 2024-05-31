@@ -8,9 +8,9 @@
     <meta name="description" content="Web site of the business called Functional Marriages & Happy Familiest">
     <link rel="icon" href="images/logo.webp" type="image/x-icon">
     <title>About - us - Functional Marriages & Happy Families</title>
-    <link href="styles/base.css" type="text/css" rel="stylesheet">
-    <link href="styles/base-large.css" type="text/css" rel="stylesheet">
-    <script src="scripts/base.js" defer></script>
+    <link href="styles/about-us.css" type="text/css" rel="stylesheet">
+    <script src="scripts/about-us.js" defer></script>
+
     <!--Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,13 +32,106 @@
 </head>
 <body>
     <header>
-
+        <img class="logo" src="images/logo.webp" alt="logo" class="image-item" width="10%" loading="lazy">
+        <h1>About Us</h1>
+        <button id="menu"></button>
+        <nav id="navMenu">
+            <ul>
+                <li><a class="active" href="https://eduardorellana.github.io/wdd131/project/#">Home</a></li>
+                <li><a class="active" href="https://eduardorellana.github.io/wdd131/project/about-us.html">About Us</a></li>
+                <li><a class="active" href="https://eduardorellana.github.io/wdd131/project/faq-histories.html">FAQ & Histories</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
+        <section id="vision-mision">
+            <div class="mision-vision">
+                <h2>Vision</h2>
+                <hr>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut quos magnam nostrum, laudantium maiores, neque reprehenderit excepturi accusantium recusandae sint ea, placeat labore molestiae quia voluptatum nemo quod et voluptatem.</p>
+            </div>
+            <div class="mision-vision">
+                <h2>Mision</h2>
+                <hr>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque similique consequuntur fuga aut atque cum est saepe eligendi natus asperiores ex, alias obcaecati odio possimus. Laborum nobis quod quaerat blanditiis.</p>
+            </div>
+        </section>
+        <section id="partners">
+            <h2>Partners</h2>
+            <hr>
+            <div class="partnersItems">
+                <img src="images/partner1.webp" alt="partner1" class="partnerPhoto" width="150" loading="lazy">
+                <h3>Mishel Sanchez</h3>
+                <p>Psych. Michelle Sanchez
+
+                    Graduate in Clinical Psychology specializing in Cognitive Integrative Therapy
+                    
+                    Active member No. 14,087
+                    
+                    Online and in-person psychotherapy
+                    
+                    Hello. My name is Michelle Sanchez, Clinical Psychologist at MAS Salud Mental Gt. 
+                    
+                    I am a graduate of the Rafael Landivar University of Guatemala. 
+                    
+                    I work from an integrative approach and I am specializing in Cognitive Integrative Therapy at the Aigle Argentina Foundation</p>
+            </div>
+            <hr>
+            <div class="partnersItems">
+                <img src="images/partner2.webp" alt="partner2" class="partnerPhoto" width="150" loading="lazy">
+                <h3>Alejandra Linares</h3>
+                <p>Mgr Alejandra Linares
+
+                    Graduate in Clinical Psychology specializing in inclusive and intercultural education
+                    
+                    Hello! My name is Gabriela Linares, Psychotherapist at the Mind and Heart Clinic, where we provide care to adults, youth, and children.
+                    
+                    I obtained my Bachelor's Degree in Clinical Psychology at San Carlos University
+                    
+                    I studied for my Master's Degree in Inclusive and intercultural Education at UNIR
+                    
+                    I teach at the Regional University of Guatemala - San Miguel Petapa and Amatitlán Campus.</p>
+            </div>
+            <hr>
+            <div class="partnersItems">
+                <img src="images/partner3.webp" alt="partner2" class="partnerPhoto" width="150" loading="lazy">
+                <h3>Alejandra Morales</h3>
+                <p>As a clinical psychologist specialized in children, my mission is to promote their emotional well-being and comprehensive development. I use
+                evidence-based therapies, adapting them to the specific needs of each child and their family.
+
+                I work closely with parents and healthcare professionals to design personalized interventions that foster resilience and personal growth. My goal is to 
+                empower children to overcome emotional and behavioral difficulties, helping them develop skills that allow them to face challenges with confidence and strength.</p>
+            </div>
+        </section>
 
     </main>
     <footer>
-
+        <div>
+            <p>
+                <span>&copy;</span>
+                <span id="currentyear"></span>
+                Erick Orellana
+                Guatemala
+            </p>
+            <p>
+                Functional Marriages & Happy Families
+            </p>
+            <p id="modified"></p>
+        </div>
+        <div class="logo-footer">
+            <button ><img src="images/logo.webp" alt="logo" class="image-item" loading="lazy" width="50"></button>
+        </div>
+        <div id="social-media">
+            <a href="#"><img src="images/youtube-logo.webp" alt="youtube-logo" class="social-logos" loading="lazy"
+                    width="50"></a>
+            <a href="#"><img src="images/twitter-logo.webp" alt="twitter-logo" class="social-logos" loading="lazy"
+                    width="50"></a>
+            <a href="https://www.instagram.com/_matrimoniosyfamiliasfelices/" target="_blank"><img
+                    src="images/instagram-logo.webp" alt="instagram-logo" class="social-logos" loading="lazy"
+                    width="50"></a>
+            <a href="#"><img src="images/facebook-logo.webp" alt="facebook-logo" class="social-logos" loading="lazy"
+                    width="50"></a>
+        </div>
     </footer>
 </body>
 </html>
