@@ -148,6 +148,11 @@
 
 
     /*Style of the main*/
+
+    #carousel {
+        display: none;
+    }
+
     main {
         display: grid;
         grid-template-columns: 1fr 25%;
