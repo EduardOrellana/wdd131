@@ -123,3 +123,159 @@ footer {
     display: block;
     gap: 10px;
 }
+
+/*Form-------------------*/
+
+#formulario-dates {
+    text-align: center;
+    border-radius: 5px;
+    border: solid var(--thirdColor);
+    margin: 0 1rem;
+    background-color: var(--secondColor);
+}
+
+.form1 fieldset{
+	margin-top: 0;
+	padding: 10px;
+	font-family: var(--principal-font);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#input[type="text"],
+#input[type="tel"],
+#input[type="email"]
+{
+    height: 35px;
+}
+
+label {
+	margin-top: 15px;
+	margin-bottom: 5px;
+    text-align: left;
+    font-weight: bold;
+    font-size: 120%;
+    font-family: var(--paragraph-font);
+}
+
+/*Histories----------------------------------------------------*/
+
+#histories-clic nav {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0.5rem;
+}
+
+#histories-clic nav a {
+    padding: 2rem 0;
+    text-align: center;
+    font-family: var(--paragraph-font);
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 5rem;
+    border: solid var(--primaryColor);
+    padding: 10px;
+}
+
+#histories-clic nav a:hover {
+
+    background-color: var(--thirdColor);
+}
+
+
+#histories {
+    display: flex;
+}
+
+#history-dynamic {
+    width: 100%;
+    border: solid var(--forthColor);
+    margin: 0 10px;
+    border-radius: 5px;
+}
+
+#history-dynamic h2 {
+    font-family: var(--heading-font);
+    font-size: 150%;
+    text-align: center;
+    color: #38369A;
+    border-bottom: solid var(--thirdColor);
+}
+
+#history-dynamic p {
+    text-align: justify;
+    padding: 1rem;
+    font-family: var(--paragraph-font);
+}
+
+/*Table of Questions..........................................*/
+
+#questions{
+    margin: 0 auto; /* Centrar horizontalmente */
+    width: 80%; /* Ancho del contenedor, ajusta según tus necesidades */
+}
+
+#questions table {
+    text-align: left;
+    margin-top: 2rem;
+    width: 50%;
+}
+
+#questions table #question {
+    display: block;
+    width: 100%;
+}
+
+#questions a:hover {
+    color: red;
+}
+
+#questions li {
+    margin-top: 4rem;
+}
+
+
+.questionTitle {
+    font-family: var(--paragraph-font);
+    text-align: center;
+    font-size: 90%;
+}
+
+.questionAnswer {
+    font-family: var(--paragraph-font);
+    font-size: 95%;
+}
+
+#containerlogoInTable {
+    text-align: center;
+}
+
+#containerlogoInTable > img {
+    border-radius: 50%;
+    box-shadow: 5px 5px 15px var(--forthColor);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 800px ) {
+
+
+
+
+
+    
+}
