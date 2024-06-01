@@ -6,18 +6,25 @@
     --secondColor: #A9DBB8;
     --thirdColor: #7CA5B8;
     --forthColor: #38369A;
-
+    --firstColor: #c6ebbe; /* Definida como primaryColor */
 
     /*Typography*/
-    --heading-font: "Source Sons 3", sans-serif;
+    --heading-font: "Source Sans 3", sans-serif;
     --paragraph-font: "Montserrat", sans-serif;
-
 }
 
 body {
     max-width: 100%;
 }
 
+h1, h2, h3, h4 {
+    font-weight: bold;
+    font-family: var(--heading-font);
+}
+
+p, nav {
+    font-family: var(--paragraph-font);
+}
 
 /*Header*/
 header {
@@ -34,11 +41,10 @@ header > img {
 header h1 {
     text-align: center;
     padding-top: 10px;
-    color: var(--firstColor);
+    color: var(--forthColor);
     font-weight: 500;
     font-size: 30px;
 }
-
 
 #navMenu {
     max-width: 640px;
@@ -91,14 +97,12 @@ header h1 {
     font-weight: 400;
 }
 
+/*Footer*/
 
 footer img {
     width: 30%;
-
 }
 
-
-/*Footer*/
 footer {
     background-color: var(--thirdColor);
     margin-top: 10px;
@@ -123,6 +127,7 @@ footer {
     display: block;
     gap: 10px;
 }
+
 
 /*Main Desing*/
 
