@@ -19,3 +19,13 @@ hamButton.addEventListener('click', () => {
 	navigation.classList.toggle('open');
 	hamButton.classList.toggle('open');
 });
+
+//DisplayMenu------------------------------------------------------------------------------
+const globalHeader = document.querySelector('header');
+const displayButton = document.querySelector('#display-menu');
+
+displayButton.addEventListener('click', () =>{
+	globalHeader.classList.toggle('open');
+	displayButton.classList.toggle('open');
+	navigation.classList.toggle('open');
+})
