@@ -273,7 +273,7 @@ label {
 }
 
 #review {
-    display: block;
+    display: none;
     padding: 1rem;
     background-color: var(--primaryColor);
     border-radius: 10px;
