@@ -258,24 +258,236 @@ label {
 
 
 
+#navMain {
+    display: none;
+}
 
+#review {
+    text-align: center;
+    font-family: var(--paragraph-font);
+    margin: 3rem;
+}
 
+#display-menu {
+    display: none;
+}
 
-
-
-
-
-
-
-
+#review {
+    display: block;
+    padding: 1rem;
+    background-color: var(--primaryColor);
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px var(--forthColor);
+}
 
 
 
 @media screen and (min-width: 800px ) {
+    /*Header Style*/
+
+    header {
+        display: none;
+    }
+
+    header>img {
+        border-radius: 50%;
+        width: 20%;
+        margin-right: 50px;
+        display: inline;
+    }
+
+    .logo {
+        border-radius: 50%;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    #display-menu {
+        display: block;
+    }
+
+    #navMenu {
+        background-color: var(--secondColor);
+        font-size: 100%;
+        width: 100%;
+        color: var(--primaryColor);
+    }
+
+    #navMenu ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+    }
+
+    #navMenu ul li {
+        margin-left: 20px;
+        border: 2px solid var(--forthColor);
+        padding: 2rem;
+        border-radius: 15px;
+        box-shadow: 5px 5px 20px var(--forthColor);
+        color: var(--forthColor);
+        font-weight: 700;
+    }
+
+    #navMenu ul li a {
+        color: var(--forthColor);
+    }
+
+    #navMenu ul li:hover a {
+        color: white;
+    }
+
+    #navMenu ul li:hover {
+        background-color: var(--forthColor);
+        color: white;
+    }
+
+    #navMenu a {
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    header h1 {
+        font-size: 100px;
+        text-align: center;
+        margin-left: 1.5rem;
+    }
+
+    #display-menu::before {
+        content: "➕";
+    }
+
+    #display-menu.open::before {
+        content: "➖";
+    }
+
+    header.open {
+        display: flex;
+        background-color: var(--secondColor);
+        padding: 1.5rem;
+        margin: 0 auto;
+        font-family: var(--heading-font);
+        border-radius: 5px;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #navMenu.open a {
+        display: block;
+        font-weight: 400;
+    }
+
+    /*Footer*/
+    footer {
+        color: black;
+        font-size: 90%;
+        font-family: var(--paragraph-font);
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    footer img {
+        width: 50px;
+    }
+
+    .logo-footer {
+        grid-area: 1/2/2/3;
+        text-align: center;
+        align-self: center;
+        display: block;
+    }
+
+    .logo-footer button,
+    .logo-footer img
+    {
+        border-radius: 50%;
+    }
+
+        
+    #social-media {
+        grid-area: 1/3/2/4;
+        justify-self: center;
+        align-self: center;
+        display: inline;
+    }
+
+    #social-media > a {
+        margin-right: 5rem;
+    }
+
+    /*Main Designing*/
+
+    body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        max-width: 1000px;
+        width: 80%;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        flex-grow: 1;
+        border: solid var(--forthColor);
+        margin-top: 1rem;
+        padding: 1rem;
+    }
+    #navMain {
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+    }
+
+    #navMain button {
+        font-size: large;
+        font-family: var(--paragraph-font);
+        color: white;
+        font-weight: bold;
+        background-color: var(--thirdColor);
+        padding: 1rem;
+    }
+
+    #navMain button:hover {
+        background-color: var(--secondColor);
+    }
+
+    #display-menu {
+        width: 4rem; 
+    }
 
 
+    #questions {
+        display: none;
+        justify-content: center; 
+        align-items: center;  
+        width: 100%;
+        height: 100%;
+    }
 
 
+    #formulario-dates {
+        margin-top: 2rem;
+        display: none;
+        width: 80%;
+    }
+
+
+    #histories {
+        display: none;
+        margin-top: 2rem;
+    }
 
     
 }

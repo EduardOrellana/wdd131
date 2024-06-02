@@ -259,3 +259,80 @@ topic_2.addEventListener("click", filterTopic2);
 topic_3.addEventListener("click", filterTopic3);
 topic_4.addEventListener("click", filterTopic4);
 
+//Desktop views---------------------------------------------------------------------------------
+//DisplayMenu------------------------------------------------------------------------------
+const globalHeader = document.querySelector('header');
+const displayButton = document.querySelector('#display-menu');
+
+displayButton.addEventListener('click', () =>{
+	globalHeader.classList.toggle('open');
+	displayButton.classList.toggle('open');
+	navigation.classList.toggle('open');
+})
+
+
+//Main-------------------------------------------------------------------------------------------------
+
+const divQuestions = document.getElementById("questions");
+const divStories = document.getElementById("histories");
+const divForm = document.getElementById("formulario-dates");
+const thanksSection = document.getElementById("review");
+
+
+//buttons
+
+let butFAQ = document.getElementById("faq-button");
+let butStories = document.getElementById("stories-button");
+let butAppointment = document.getElementById("appointment-button");
+
+butFAQ.addEventListener('click', displayFAQ)
+butStories.addEventListener('click',displayStoriesFunction)
+butAppointment.addEventListener('click', displayFormFunction)
+
+function displayFAQ(){
+	divQuestions.style.display = 'flex'
+	divStories.style.display = 'none';
+	divForm.style.display = 'none';
+	thanksSection.style.display = 'none';
+}
+
+function displayStoriesFunction() {
+	divQuestions.style.display = 'none'
+	divStories.style.display = 'flex';
+	divForm.style.display = 'none';
+	thanksSection.style.display = 'none';
+}
+
+function displayFormFunction() {
+	divQuestions.style.display = 'none'
+	divStories.style.display = 'none';
+	divForm.style.display = 'block';
+	thanksSection.style.display = 'none';
+}
+
+//action of the form------------------------------------------------------------------------------
+
+const textCount = document.getElementById("counter");
+const form = document.querySelector("form.form1");
+
+let counterLocalStorage = Number(window.localStorage.getItem("countingForm")) || 0;
+
+function sumLocalStorage (event) {
+
+	event.preventDefault();
+
+	divQuestions.style.display = 'none'
+	divStories.style.display = 'none';
+	divForm.style.display = 'none';
+
+
+	thanksSection.style.display = 'block';
+
+	counterLocalStorage ++;
+	window.localStorage.setItem("countingForm", counterLocalStorage);
+	textCount.textContent = `You have ${counterLocalStorage} appointments`;
+}
+
+const sender = document.querySelector(`form.form1 input[type="image"]`);
+
+form.addEventListener('submit', sumLocalStorage);

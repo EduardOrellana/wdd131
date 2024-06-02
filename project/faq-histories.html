@@ -42,7 +42,13 @@
             </ul>
         </nav>
     </header>
+    <button id="display-menu"></button>
     <main>
+        <div id="navMain">
+            <button id="faq-button">FAQ</button>
+            <button id="stories-button">Stories</button>
+            <button id="appointment-button">Appointments</button>
+        </div>
         <section id="questions">
             <table class="table table-bordered border-primary">
                 <tr>
@@ -96,7 +102,7 @@
         </div>
         <hr>
         <div id="formulario-dates">
-            <form method="get" action="review.html" class="form1">
+            <form method="get" class="form1">
             <fieldset>
                 <legend>Request Appointment</legend>
                 <label for="name-client">Name*</label>
@@ -116,6 +122,11 @@
             </form>
         </div>
     </main>
+    <div id="review">
+        <h2>Thanks! We have your information!</h2>
+        <p>We are going to contact u soon</p>
+        <p id="counter"></p>
+    </div>
     <footer>
         <div>
             <p>
